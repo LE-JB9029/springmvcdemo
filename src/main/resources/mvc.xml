@@ -14,7 +14,7 @@
     <bean id="conversionService" class="org.springframework.format.support.FormattingConversionServiceFactoryBean">
         <property name="converters">
             <list>
-                <bean class="com.spring.business.conveter.StringToDateConverter"></bean>
+                <bean class="com.demo.common.conveter.StringToDateConverter"></bean>
             </list>
         </property>
     </bean>
@@ -52,7 +52,7 @@
         <property name="order" value="1"/>
         <property name="interceptors">
             <list>
-                <bean class="com.spring.business.interceptors.SafetyInterceptor"/>
+                <bean class="com.demo.common.interceptors.SafetyInterceptor"/>
             </list>
         </property>
     </bean>
